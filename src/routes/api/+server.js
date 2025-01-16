@@ -1,5 +1,4 @@
 import { json } from '@sveltejs/kit';
-import {ECO_COUNTER_API} from '$env/static/private';
 
 // Handle POST requests to fetch traffic data from Eco Counter API
 export async function POST({ request }) {
@@ -12,7 +11,7 @@ export async function POST({ request }) {
     method: 'GET',
     headers: { 
       accept: 'application/json', 
-      'X-API-KEY': ECO_COUNTER_API
+      'X-API-KEY': process.env.ECO_COUNTER_API
     }
   };
 

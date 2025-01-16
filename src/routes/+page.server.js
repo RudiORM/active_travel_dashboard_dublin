@@ -1,11 +1,11 @@
-import { ECO_COUNTER_API } from "$env/static/private";
+//import { ECO_COUNTER_API } from "$env/static/private";
 
 export async function load({ params }) {
   const options = {
     method: 'GET',
     headers: {
       accept: 'application/json', 
-      'X-API-KEY': ECO_COUNTER_API  // Use the imported variable
+      'X-API-KEY': process.env.ECO_COUNTER_API  // Use the imported variable
     }
   };
 

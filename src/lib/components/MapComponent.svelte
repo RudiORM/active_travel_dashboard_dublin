@@ -3,7 +3,7 @@
   import mapboxgl from 'mapbox-gl';
 	import '../../../node_modules/mapbox-gl/dist/mapbox-gl.css';
 
-  import { PUBLIC_MAPBOX_TOKEN } from '$env/static/public';
+  // import { PUBLIC_MAPBOX_TOKEN } from '$env/static/public';
 	import { p } from '$lib/props.svelte';
 	import MapMarker from '$lib/components/MapMarker.svelte';
 	import MapMarkerCordon from '$lib/components/MapMarkerCordon.svelte';
@@ -165,7 +165,7 @@
 		p.dynamic.fillLayer = 'map-layer-' + p.deriveds.metricToggle;
 
 		map = new mapboxgl.Map({
-			accessToken: PUBLIC_MAPBOX_TOKEN,
+			accessToken: process.env.PUBLIC_MAPBOX_TOKEN,
 			container: el,
 			style: 'mapbox://styles/mapbox/streets-v12',
 			bounds: geoBbox,

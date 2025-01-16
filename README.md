@@ -35,13 +35,17 @@ Generated through [Google Transportation Analysis Notebook](#google-processing) 
 * Accessed via Eco-Visio API
 * Provides multiple temporal views:
    * Hourly (last 30 days)
-   * Weekly (last 3 months)
    * Monthly (last 3 years)
 
 ### 4. Strava Metro Dataset
 * Developed by Smart Dublin
 * Extrapolates total bicycle traffic volumes
-* Coverage of 5 key Dublin routes (2021-2023)
+* Coverage of 4 key Dublin routes (2021-2023)
+
+### 5. Canal Cordon Counts
+* Commissioned by DCC
+* Calculates total traffic at 33 cordons on the canal 
+* From 1997-present this has measured traffic 7-10am on a single day in November
 
 ## Features <a name="features"></a>
 * Interactive map visualization
@@ -57,7 +61,6 @@ Generated through [Google Transportation Analysis Notebook](#google-processing) 
 
 ## Technical Implementation <a name="technical-implementation"></a>
 * Frontend: Svelte/SvelteKit
-* Data Visualization: D3.js
 * Mapping: MapBox
 * API Integration: Eco-Visio API
 

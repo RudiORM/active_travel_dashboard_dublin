@@ -278,7 +278,7 @@ function processHourlyData(pedestrianData) {
 	<div class="overall2">
 		<div class="text2">
 			<h2 class="dublin-header">{'About ' + 'this view'}</h2>
-			<div class="number2">{@html "The Eco-counters view shows a live feed of pedestrian and cycling counters in Dublin, accessed through the <a href='https://data.smartdublin.ie/dataset/pedestrian-and-cycle-counter-api-for-dublin-region'>Eco-visio API</a>. Click on a counter for pedestrian/cycling footfall. Note: Eco-Visio are investigating issues with some counters."}</div>
+			<div class="number2">{@html "The locations view shows a live feed of pedestrian and cycling counters in Dublin, accessed through the <a href='https://data.smartdublin.ie/dataset/pedestrian-and-cycle-counter-api-for-dublin-region'>Eco-visio API</a>. Click on a counter for pedestrian/cycling footfall. Note: Eco-Visio are investigating issues with some counters."}</div>
 		</div>
 	</div>
 </div>

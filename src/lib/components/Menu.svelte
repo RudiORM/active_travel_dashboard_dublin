@@ -52,7 +52,7 @@
 
 		{#if expandedHierarchy1}
 			<ul class="nested-list">
-				{#each p.constant.visModeOptions.slice(0, 2) as d}
+				{#each p.constant.visModeOptions.slice(0, 3) as d}
 					<li>
 						<button
 							onclick={() => setMode(d)}
@@ -74,7 +74,7 @@
 
 		<!-- Hierarchy 2 -->
 		<ul>
-			{#each p.constant.visModeOptions.slice(2,5) as d}
+			{#each p.constant.visModeOptions.slice(3,5) as d}
 				<li>
 					<button
 						onclick={() => setMode(d)}

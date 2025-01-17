@@ -46,9 +46,9 @@ export function createProps() {
         visModeOptions: [
             { label: "Census", value: "census" },
             { label: "Google Trips", value: "google" },
+            { label: "Canal Cordon Counts", value: 'cordon'},
             { label: "Location", value: "temp" },
             { label: "Route", value: "strava" },
-            { label: "Canal Cordon", value: 'cordon'},
 
         ],
         censusOptions: ['2022', '2016', "Change"],

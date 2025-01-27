@@ -109,7 +109,7 @@ $effect(() => {
 
 <div class="container">
 	<div class="overall2" on:click={() => (p.dynamic.selected_cordon='2023')}>
-		<h2 class="dublin-header">{'Modal split by Cordon Counter'}</h2>
+		<h2 class="dublin-header">{'Vehicles by Cordon Counter'}</h2>
 
 		<div class="flex-items3">
 			<div class="a1">
@@ -147,7 +147,7 @@ $effect(() => {
 
 	<div class="overall2" >
 		<div class="text2">
-			<h2 class="dublin-header">{'Yearly trends: all Cordon Counters'}</h2>
+			<h2 class="dublin-header">{'Yearly trends: all passengers'}</h2>
 			<div class="text">
 				<div class="a1">
 					<p class="label" style="margin-bottom: 0px;">

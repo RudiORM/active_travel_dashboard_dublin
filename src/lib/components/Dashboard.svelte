@@ -28,6 +28,14 @@
 </main>
 
 <style>
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
   .img {
     position: absolute;
     width: 150px;
@@ -43,6 +51,8 @@
   padding: 0;
   width: 100%;
   height: 100%;
+ height: 100vh; /* Change to viewport height instead of percentage */
+  min-height: 100%; /* Add this to ensure it grows with content */
 }
 
 .container {

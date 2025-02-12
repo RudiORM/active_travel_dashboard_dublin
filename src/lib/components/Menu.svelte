@@ -33,7 +33,7 @@
 
 		aria-label="Toggle navigation"
 	>
-		{@html expanded ? "&#9204;" : "&#8801;"}
+		{@html expanded ? "◄" : "&#8801;"}
 	</button>
 
 	<section class="non-essential">

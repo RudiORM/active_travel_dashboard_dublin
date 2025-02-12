@@ -1,24 +1,18 @@
 <script>
 import { get } from "svelte/store";
 import {p} from '$lib/props.svelte';
-
-// Constants
 const TEMPERATURE_RANGE = 99;
-const LABEL_DISPLAY_INTERVAL = 2; // Show every nth label
-
+const LABEL_DISPLAY_INTERVAL = 4; // Show every nth label
 // // Helper functions
 const formatLabel = (value) => p.deriveds.metricFormat.format(value);
-
 const calculatePosition = (value, min, range) => {
     if (value === min) return 0;
     if (value === min + range) return 100;
     return ((value - min) / (range)) * 100;
 };
-
 const calculateWidth = (currentValue, previousValue, range) => {
     return ((currentValue - previousValue) / range) * 100;
 };
-
 let legendData = $derived.by(() => {
     return p.deriveds.colorBreaks2.map((breakPoint, index) => ({
         color: p.deriveds.cols2[index],
@@ -28,7 +22,6 @@ let legendData = $derived.by(() => {
         showLabel: index % LABEL_DISPLAY_INTERVAL === 0
     }));
 });
-
 
 let title = $derived.by(() => {
     return `${p.deriveds.metricLabel.split(' ')[0]} %`;

@@ -111,7 +111,7 @@ nav {
     width: 110px;
   }
   .dashboard-title {
-    font-size: var(--font-size-2xl);
+    font-size: var(--font-size-xl);
   }
 }
 </style>
